@@ -1,0 +1,84 @@
+\documentclass[10pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+
+\newcommand
+\VRule
+{
+    \color{lightgray}
+    \vrule width 0.5pt
+}
+\makeatletter
+
+\renewcommand
+\maketitle
+{
+    \bgroup
+    \setlength{\parindent}{0pt}
+    \begin{flushleft}
+        {\huge \@title}\\[5pt]
+        \@author
+    \end{flushleft}\egroup}
+\makeatother
+
+\title{Max Musterman}
+\author{max.musterman@mustermail.com}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\begin{minipage}[ht]{0.48\textwidth}
+    Mainstreet 32\\
+    12345 Generic City\\
+    Texas
+\end{minipage}
+\begin{minipage}[ht]{0.48\textwidth}
+    Qualityland \\
+    January 5th, 2020\\
+    +12 345 678 90
+\end{minipage}
+
+\section*{Education}
+\begin{tabular}{L!{\VRule}R}
+    from--to&School/Institution\\[5pt]
+\end{tabular}
+
+\section*{Work experience/internships}
+\begin{tabular}{L!{\VRule}R}
+    from--to&{\bf super generic job you did for 5 bucks an hour}\\[5pt]
+    &This is a horrible description\\
+\end{tabular}
+
+\section*{Languages}
+\subsection*{Human}
+\begin{tabular}{L!{\VRule}R}
+    French&I dont speak french.\\[5pt]
+\end{tabular}
+
+\subsection*{Computer}
+\begin{tabular}{L!{\VRule}R}
+    HTML&Basic html scripting knowledge, especially if-loops\\[5pt]
+    {\LaTeX}&I dont know any {\LaTeX} thats why I use this template.\\
+\end{tabular}
+
+\section*{Further qualifications}
+\begin{tabular}{L!{\VRule}R}
+    Linux&I dont use Linux, I use Windows on my Macbook.\\[5pt]
+\end{tabular}
+
+\section*{Hobbys}
+Staring at a wall for two hours. Really refreshing.\\
+
+\section*{Links}
+\begin{tabular}{L!{\VRule}R}
+    GitHub&\href{https://github.com/taDachs}{My GitHub page}\\
+\end{tabular}
+
+\end{document}
